@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: rgb(54, 12, 102);
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: rgb(113, 50, 214);
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  
+  display: none;
+  padding: 100px 20px;
+  height: 1150px;
+}
+
+#Home {background-color: red;}
+#News {background-color: rgb(243, 124, 237);}
+#Contact {background-color: rgb(51, 168, 247);}
+#About {background-color: rgb(255, 136, 0);}
+</style>
+</head>
+<body>
+
+<button class="tablink" onclick="openPage('Home', this, 'black')">Home</button>
+<button class="tablink" onclick="openPage('News', this, 'black')" id="defaultOpen">Recipe</button>
+
+<button class="tablink" onclick="openPage('About', this, 'black')">About</button>
+<button class="tablink" onclick="openPage('Contact', this, 'black')">Contact</button>
+
+<div id="Home" class="tabcontent" style="background-image: url(https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60); background-repeat: no-repeat; background-size: cover;">
+   <h1> <center><strong>WELCOME!!</strong></center></h1>
+  
+</div>
+
+<div id="News" class="tabcontent">
+    <h3 class="name"><b style="text-align: center;">BLACK FOREST CAKE RECIPE</b></h3>
+    <p>   </p>
+    
+    <h5 class="step">STEPS TO PREPARE CAKE</h5>
+    <img src="https://images.unsplash.com/photo-1557925923-cd4648e211a0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"  width="200" height="300">
+    <ul style="font-size:12px ;">
+        <p>   </p>
+        <li>Grease an 8” diameter baking tin and dust it with flour. Pre heat the oven to 1800 C. Sieve together maida, cocoa powder, baking powder and soda bicarbonate. Soften butter (DO NOT MELT), add NESTLÉ MILKMAID Sweetened Condensed Milk and beat well. Add the vanilla essence.</li>
+        <p>    </p>
+        <li>Add maida mixture and aerated soda alternately to the batter till all the maida and soda are used up. Pour the batter into the baking tin and bake in the preheated oven for 45-50 minutes or till the tooth pick inserted in the center of the cake comes out clean. Remove from oven, cool for a while. Loosen sides of cake, using a knife if necessary. Turnout over a wire rack or plate and cool slightly before cutting horizontally into 2.</li>
+        <p>     </p>
+        <li>Drain & destone cherries, soak both cake halves with cherry syrup. Whip cream and sugar till light and fluffy, Sandwich the two layers of cake with whipped cream and chopped cherries. Top with whipped cream and cherries, sprinkle generously with grated chocolate. Chill and serve.
+        </li>
+    </ul>
+    <p>   </p>
+    <p style="color: black;">For more RECIPE </p>
+    <a href="https://www.milkmaid.in/cakes-recipes?utm_source=google&utm_medium=cpcv&utm_campaign=Milkmaid_Search_Owned_Mar%2720&utm_content=cake_keywords&utm_term=exact_match&gclid=CjwKCAjwgdX4BRB_EiwAg8O8HdpGyvFHhTmf3D42XlxiFl5-6cmCUc1tX5Phc29g5Y-RqgbKRFUw8hoC8_sQAvD_BwE&gclsrc=aw.ds">click here</a>
+    <p>   </p>
+   
+</div>
+
+
+
+<div id="About" class="tabcontent">
+    <h1>About Us</h1>
+    <p><strong>"Bakers" </strong> is an online cake blog dedicated to providing subscribers with a fun and informative platform for dessert lovers of all kinds! We offer recipes, tutorials, articles and tips on all things cake related!</p>
+    <br>
+    <br>
+    <p>Bakers is a website striving to create easy-to-make recipes for the busy (yet creative) baker. We have created many yummy baked goods, ranging from no-bake treats, perfect holiday recipes, vegan baking and much, much more. Our recipes are easy to create, but still have a “wow” factor guests and kids can’t get enough of. We are up-to-date on the new baking trends. Then, we add our own twists to create a true original tasty recipe.</p>
+    <br>
+    <br>
+    <p>So whether you’re afraid of an oven or an experienced baker, we have the recipes you want to try out. Check out our Youtube Channel video tutorials, we add to regularly!</p>
+    <br>
+    <br>
+    <p>We love our community. Always feel free to leave a comment, question or suggestion on any post we have. Thanks for your continued support!</p>
+    <br>
+    <br>
+    <h3>Happy Baking!</h3>
+    <a href="/PDF RECIEPE.pdf" class="" style="text-decoration: none;">Click here to download the PDF</a>
+</div>
+
+<div id="Contact" class="tabcontent">
+    <h1>Contact</h1>
+    <h2>Feel free to contact Us......</h2>
+    <br>
+    <br>
+    
+   
+    <h3>Fill your details to register. </h3>
+    <form action="insert.php" method="POST">
+<p>Fullname:
+<input type="text" name="name">   </p>
+
+<p> Email:
+<input type="text" name="email"></p>
+<p>Phonenumber:
+<input type="text" name="phone">
+</p>
+
+<p>  Address:
+<input type="text" name="add"></p>
+
+ 
+<input type="submit" value="Submit">
+<input type="reset" value="reset">
+
+</form>
+   
+  </div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 
